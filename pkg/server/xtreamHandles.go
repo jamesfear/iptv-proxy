@@ -73,7 +73,7 @@ func (c *Config) cacheXtreamM3u(playlist *m3u.Playlist, cacheName string) error 
 }
 
 func (c *Config) xtreamGenerateM3u(ctx *gin.Context, extension string) (*m3u.Playlist, error) {
-	client, err := xtreamapi.New(c.XtreamUser.String(), c.XtreamPassword.String(), c.XtreamBaseURL, Purple Player/3.2 (iPhone; iOS 16.6; Scale/2.00))
+	client, err := xtreamapi.New(c.XtreamUser.String(), c.XtreamPassword.String(), c.XtreamBaseURL, "Purple Player/3.2 (iPhone; iOS 16.6; Scale/2.00")
 	if err != nil {
 		return nil, err
 	}
